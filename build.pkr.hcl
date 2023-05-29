@@ -1,5 +1,5 @@
 source "amazon-ebs" "ubuntu-lts" {
-  region = "us-west-1"
+  region = "us-east-1"
   source_ami_filter {
     filters = {
       virtualization-type = "hvm"
