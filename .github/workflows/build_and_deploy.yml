@@ -62,6 +62,6 @@ jobs:
       - name: Create and set channel
         working-directory: .github/scripts
         run: |
-          git update-index --chmod=+x ./.github/scripts/create_channel_iteration.sh
+          git update-index --chmod=+x create_channel_iteration.sh
           channel_name=$( echo ${{github.ref_name}} | sed 's/\./-/g')
           ./create_channel_iteration.sh $HCP_BUCKET_NAME $channel_name "${{ needs.build-image.outputs.iteration_id }}"
