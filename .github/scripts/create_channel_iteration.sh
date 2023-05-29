@@ -23,7 +23,7 @@ test "$#" -eq 3 || usage
 bucket_slug="$1"
 channel_name="$2"
 iteration_id="$3"
-base_url="https://api.cloud.hashicorp.com//packer/2021-04-30/organizations/$HCP_ORGANIZATION_ID/projects/$HCP_PROJECT_ID/images/$HCP_BUCKET_NAME/channels"
+base_url="https://api.cloud.hashicorp.com//packer/2021-04-30/organizations/$HCP_ORGANIZATION_ID/projects/$HCP_PROJECT_ID"
 
 # If on main branch, set channel to release
 if [ "$channel_name" == "main" ]; then
