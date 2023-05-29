@@ -58,9 +58,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-      - name: permission
-        run: |
-        chmod +x .github/scripts/create_channel_iteration.sh
+      - name: permisson
+        run: sudo chmod +x create_channel_iteration.sh
 
       - name: Create and set channel
         working-directory: .github/scripts
