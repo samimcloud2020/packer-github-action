@@ -14,7 +14,7 @@ source "amazon-ebs" "ubuntu-lts" {
   ssh_agent_auth = false
 
   ami_name    = "hashicups_{{timestamp}}"
-  ami_regions = ["us-west-1"]
+  ami_regions = ["us-east-1","us-west-1"]
 }
 
 build {
